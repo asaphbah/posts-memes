@@ -1,0 +1,290 @@
+/*============RESET============*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+::-webkit-scrollbar-thumb{
+    width: 5px;
+}
+/*=============================*/
+/*============TELAS============*/
+/*=============================*/
+/*============LAYOUT===========*/
+body{
+    width: 100vw;
+    height: 100vh;
+    list-style: none;
+}
+main{
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #dadada ;
+}
+/*=============================*/
+/*============HEADER============*/
+/*=============================*/
+header{
+    background-color:#2F4F4F;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+nav{
+    width: 40vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-user{
+    width: 200px;
+    height: 100%;
+    background-color: #87CEEB;
+}
+.ancora{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(253, 253, 253);
+}
+.ancora:hover{
+   background-color: #c3cece;
+}
+.btn{ 
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: transparent;
+}
+.btn-ancora{
+    margin-right: 500px;
+}
+.btn:hover{
+    background-color: rgba(255, 0, 0, 0.336);
+}
+.ancora-nav-user{
+    margin-right: 30px;
+    width: 70px;
+    height: 70px;
+}
+.nav-user{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #b8b8b8;
+    overflow: hidden;
+}
+.nav-img{
+    height: 100%;
+}
+/*=============================*/
+/*============CONTA============*/
+/*=============================*/
+.user{
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+.user-photo{
+    width: 300px;
+    height: 600px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.user-photo img{
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    background-color: rgb(134, 134, 134);
+}
+.user-bio{
+    margin-right: 25px;
+    width: 350px;
+    height: 100%;
+    display: block;
+    font-size: 18px;
+}
+.user-dado{
+    margin-top: 20px;
+    width: 350px;
+    word-wrap: break-word;
+}
+.user-h1{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    width: 300px;
+    word-wrap: break-word;
+}
+.user-h2{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+    width: 300px;
+}
+.user-post{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.cont-post{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 600px;
+    height: 750px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 8px black;
+}
+.cont-post-home{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    width: 600px;
+    height: 850px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 2px 3px 8px black;
+}
+.dono-post{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: start;
+}
+.foto-user{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+}
+.user-post-foto{
+    height: 100%;
+}
+.text-home{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.post{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.cont-img-post{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-color: #2F4F4F;
+}
+.img-post{
+    height: 100%;
+}
+.descri-post{
+    width: 100%;
+    height: 150px;
+}
+.text-post{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.curtida{
+    width: 50px;
+    border-radius: 20%;
+    background-color: #112f3b;
+    color: #87CEEB;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.cont-curtida{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.img-curtida{
+    width: 30px;
+    height: 30px;
+}
+.curt{
+    cursor: pointer;
+}
+.login-form{
+    margin: auto;
+    display: flex;
+    height: 500px;
+    width: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
