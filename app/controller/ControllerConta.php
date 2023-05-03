@@ -1,10 +1,10 @@
 <?php
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Postagem.php';
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Usuario.php';
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Comissao.php';
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Curtidas.php';
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Seguidores.php';
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/controller/Controller.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Postagem.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Usuario.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Comissao.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Curtidas.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Seguidores.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/controller/Controller.php';
     // inicia os objetos
 
     class ControllerConta extends Controller{
@@ -20,6 +20,15 @@
             $this->curtidas = new Curtidas();
             $this->postagem = new Postagem();
             $this->comissao = new Comissao();
+        }
+        public function deleteCurtida($id_postagem,$id_usuario){
+            $this->curtidas->deleteCurtida($id_postagem,$id_usuario);
+        }
+        public function addCurtida($id_postagem,$id_usuario){
+            $this->curtidas->addCurtida($id_postagem,$id_usuario);
+        }
+        public function verCurtida($id_postagem, $id_usuario){
+            return $this->curtidas->verificaCurtida($id_postagem, $id_usuario);
         }
         public function getCurtidas($id_postagem){
             return $this->curtidas->qtdCurtida($id_postagem);

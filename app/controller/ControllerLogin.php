@@ -1,5 +1,5 @@
 <?php
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Login.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/module/Login.php';
    // if (session_status() == PHP_SESSION_NONE) {session_start();}
 
    if (!isset($_SESSION)) {

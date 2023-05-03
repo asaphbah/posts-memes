@@ -1,5 +1,5 @@
 <?php
-    require_once 'C:\xampp\htdocs\posts-curtidas-login/app/config/ConfigDataBase.php';
+    require_once 'C:\xampp\htdocs\posts-memes/app/config/ConfigDataBase.php';
 
     class Seguidores extends Connect{
 

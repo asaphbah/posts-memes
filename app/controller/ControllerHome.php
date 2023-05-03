@@ -1,10 +1,10 @@
 <?php 
 
- require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Postagem.php';
- require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Usuario.php';
- require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Curtidas.php';
- require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Seguidores.php';
- require_once 'C:\xampp\htdocs\posts-curtidas-login/app/controller/Controller.php';
+ require_once 'C:\xampp\htdocs\posts-memes/app/module/Postagem.php';
+ require_once 'C:\xampp\htdocs\posts-memes/app/module/Usuario.php';
+ require_once 'C:\xampp\htdocs\posts-memes/app/module/Curtidas.php';
+ require_once 'C:\xampp\htdocs\posts-memes/app/module/Seguidores.php';
+ require_once 'C:\xampp\htdocs\posts-memes/app/controller/Controller.php';
     class ControllerHome extends Controller{
         private $postagem;
         private $curtidas;

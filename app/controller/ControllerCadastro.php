@@ -1,29 +1,25 @@
 <?php 
-   require_once 'C:\xampp\htdocs\posts-curtidas-login/app/module/Usuario.php';
+   require_once 'C:\xampp\htdocs\posts-memes/app/module/Insert.php';
 
     class ControllerCadastro{
 
-        private $usuario;
+        private $cadastro;
+        //---------------//
 
     public function __construct()
     {
-        $this->usuario = new Usuario();
+        $this->cadastro = new Insert(); // Instancia um novo objeto da classe Usuario
     }
-    public function Verifica($nome,$email,$senha,$descricao){
-        if(!preg_match('/^[a-zA-Z0-9_\-]+$/', $nome)) {
-            return 'nome invalidado';
-        }else if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            return 'nome invalidado';
-        }else if(!preg_match('/^[a-zA-Z0-9_\-]+$/', $senha) || strlen($senha) < 8){
-            return 'senha invalida';
-        }else if(!preg_match('/^[a-zA-Z0-9_\-\s]+$/', $descricao)){
-            return 'descrição invalida';
-        }
-        return true;
-    }
-    public function Insert($nome, $email, $senha, $descricao){
-        $this->usuario->salvaUsuario($nome, $email, $senha, $descricao);
-    }
+    public function Verifica($nome,$email,$senha,$descricao,$codinome, $foto){
 
+     
     }
+    public function fotoInsere($foto){
+       
+        
+    }
+    public function insert($nome, $email, $senha, $descricao, $foto, $codinome){
+        
+    }
+}
 ?>

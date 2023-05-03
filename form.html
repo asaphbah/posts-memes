@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Formulário</title>
+  </head>
+  <style>
+.cadastro-user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  width: 400px;
+}
+
+.cadatrar{
+  margin-top: 10px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #005fa3;
+}
+
+  </style>
+  <body>
+    <form action="" method="">
+      <label for="nome">nome</label>
+      <input required type="text" name="nome" id="nome">
+      <label for="email">email</label>
+      <input type="email" name="email" id="email">
+      <label for="codinome">codinome</label>
+      <input type="text" name="codinome" id="codinome">
+      <label for="img">foto de usuario</label>
+      <input type="file" name="img" id="img">
+      <label for="senha">senha</label>
+      <input type="text" name="senha" id="senha">
+      <label for="descricao">descrição</label>
+      <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+      <input type="submit" value="Enviar">
+    </form>
+  </body>
+</html>
